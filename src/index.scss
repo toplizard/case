@@ -1,0 +1,43 @@
+@import './foundations/typography/font';
+@import './foundations/breakpoints/index';
+
+// It really hurts my soul to have "wild" and un reusable values like colors and spaces, they belong in their own foundations folder
+// Some stuff here could have its own folder, these styles are very specific for one page
+html {
+ max-width: 100%;
+ font-family: "SBAB-Regular";
+ color: #101010;
+ -webkit-font-smoothing: antialiased;
+}
+
+body {
+ max-width: 100%;
+ padding: 2.5rem 1rem 7rem;
+ margin: 0;
+
+ @include mq-above-mobile {
+  max-width: 55rem;
+  margin: 0 auto;
+ }
+
+ * {
+  box-sizing: border-box;
+ }
+}
+
+.sbab-app{
+ &__section {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ &__section-content {
+  padding-bottom: 3rem;
+
+  @include mq-above-mobile {
+    max-width: 60%;
+    min-width: 30rem;
+    padding-bottom: 4rem;
+  }
+ }
+}

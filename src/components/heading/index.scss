@@ -1,0 +1,27 @@
+@import '../../foundations/breakpoints/index';
+@import '../../foundations/typography/font';
+
+.sbab-heading {
+ font-family: 'SBAB-display';
+ margin: 0;
+
+ &--lg {
+   font-size: 2.25rem;
+
+  @include mq-above-mobile {
+   font-size: 3rem;
+  }
+
+  + p {
+   margin-top: 0.5em;
+  }
+ }
+
+ &--md {
+  font-size: 1.25rem;
+
+  @include mq-above-mobile {
+   font-size: 2.25rem;
+  }
+ }
+}

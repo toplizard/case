@@ -1,0 +1,6 @@
+@import '../../utils/formInput';
+
+.sbab-select {
+ @include input;
+ cursor: pointer;
+}

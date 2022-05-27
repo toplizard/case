@@ -1,0 +1,13 @@
+@import '../../foundations/breakpoints/index';
+
+.sbab-paragraph {
+  margin: 0;
+
+ &--lg {
+  font-size: 1.25rem;
+
+  @include mq-above-mobile {
+   font-size: 1.5rem;
+  }
+ }
+}

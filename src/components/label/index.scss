@@ -1,0 +1,12 @@
+.sbab-label {
+ display: flex;
+ flex-direction: column;
+
+ span {
+  padding-bottom: 0.5rem;
+ }
+
+ + .sbab-label {
+  margin-top: 1.5rem;
+ }
+}

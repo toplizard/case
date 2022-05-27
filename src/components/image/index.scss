@@ -1,0 +1,11 @@
+@import '../../foundations/breakpoints/index';
+
+.sbab-image {
+  &--hide-mobile {
+   display: none;
+
+   @include mq-above-mobile {
+     display: block;
+   }
+  }
+}

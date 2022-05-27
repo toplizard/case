@@ -1,0 +1,23 @@
+@import '../foundations/breakpoints/index';
+// Used in both select and input components, maybe the name could be more generic
+@mixin input {
+ color: #101010;
+ font-size: 1.25rem;
+ padding: 0.62rem 1.875rem 0.63rem 0.75rem;
+ border: thin solid #999;
+ border-radius: 0;
+ box-sizing: border-box;
+ width: 100%;
+ appearance: none;
+ background-color: white;
+
+ @include mq-above-mobile {
+  width: 100%;
+  max-width: 30rem;
+ }
+
+ &:focus {
+  box-shadow: 0 0 0 3px #4299e180;
+  outline: 0;
+ }
+}

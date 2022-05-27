@@ -1,0 +1,51 @@
+@import '../../foundations/breakpoints/index';
+
+// I freestyled the style of the form a bit accordion to what I felt more appropriate
+.sbab-form {
+ > h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2rem;
+ }
+
+ &__main {
+  @include mq-above-mobile {
+   max-width: 60%;
+   min-width: 30rem;
+  }
+ }
+
+ &__results {
+  margin-top: 4rem;
+
+  > p {
+   padding-bottom: 1rem;
+   border-bottom: 1px solid #ddd;
+  }
+ }
+
+ &__results--total {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include mq-above-mobile {
+   flex-direction: row;
+  }
+
+  p {
+   font-size: 2.25rem;
+  }
+
+  img {
+   margin: -1rem 0 2rem;
+
+   @include mq-above-mobile {
+    order: 2;
+    margin-top: -1.5rem;
+   }
+  }
+ }
+}

@@ -1,0 +1,6 @@
+@mixin mq-above-mobile {
+ // It could be nice with some global variables for the breakpoint
+ @media screen and (min-width: 45em) {
+   @content;
+ }
+}
